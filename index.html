@@ -15,6 +15,18 @@
   </head>
   <body>
     <div class="menu">
+      <li style="--i: 1; --clr: #ff0000">
+        <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+      </li>
+      <li style="--i: 2; --clr: #1877f2">
+        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+      </li>
+      <li style="--i: 3; --clr: #ea4c89">
+        <a href="#"><ion-icon name="logo-dribbble"></ion-icon></a>
+      </li>
+      <li style="--i: 4; --clr: #25d366">
+        <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+      </li>
       <div class="toggle">
         <ion-icon name="share-social"></ion-icon>
         <ion-icon name="close-outline"></ion-icon>
@@ -29,11 +41,11 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
     <script>
-        let toggle = document.querySelector('.toggle');
-        let menu = document.querySelector('.menu');
-        toggle.onclick = ()=>{
-            menu.classList.toggle('active');
-        }
+      let toggle = document.querySelector(".toggle");
+      let menu = document.querySelector(".menu");
+      toggle.onclick = () => {
+        menu.classList.toggle("active");
+      };
     </script>
   </body>
 </html>

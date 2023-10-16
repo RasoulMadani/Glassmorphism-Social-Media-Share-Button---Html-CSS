@@ -40,17 +40,36 @@ body {
         }
       }
     }
+    > li {
+      position: absolute;
+      left: 0;
+      list-style: none;
+      transform-origin: 110px; /* نصف عرض پدر */
+      transition: 0.5s;
+      transform: rotate(calc(360deg / 4 * var(--i)));  /*تقسیم تعداد کل ال آی ها بر سیصدوشصت ضربدر عدد ال آی*/
+       >a{
+         position: relative;
+         display: flex;justify-content: center;align-items: center;
+         width: 80px;
+         height: 80px;
+         background: var(--clr);
+         font-size: 2.25em;border-radius: 50%;
+         transform: rotate(calc(360deg / -4 * var(--i))); /* برای اینکه بد چرخیدن ها برگردد سرجای اولش */
+         box-shadow: 0 3px 4px rgba(0,0,0,0.15);
+         color: white;
+       }
+    }
   }
   .menu.active {
     > .toggle {
       > ion-icon {
         &:nth-child(1) {
-            opacity: 0;
-            transform: rotate(0deg);
+          opacity: 0;
+          transform: rotate(0deg);
         }
         &:nth-child(2) {
-            opacity: 1;
-            transform: rotate(360deg);
+          opacity: 1;
+          transform: rotate(360deg);
         }
       }
     }
